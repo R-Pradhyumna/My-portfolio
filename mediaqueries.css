@@ -4,7 +4,7 @@
     margin-bottom: 6rem;
   }
   .about-containers {
-    flex-wrap: wrap;
+    grid-template-columns: 1fr;
   }
   #contact,
   #projects {
@@ -19,8 +19,8 @@
   #hamburger-nav {
     display: flex;
   }
-  #experience,
-  .experience-details-container {
+  #skills,
+  .skills-details-container {
     margin-top: 2rem;
   }
   #profile,
@@ -63,7 +63,12 @@
     height: fit-content;
     margin-bottom: 2rem;
   }
-  .about-containers,
+  .about-containers {
+    grid-template-columns: 1fr; /* Already single column */
+    gap: 1rem;
+  }
+
+  /* Flexbox containers */
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
@@ -75,8 +80,12 @@
   .nav-links li a {
     font-size: 1rem;
   }
-  .experience-sub-title {
+  .skills-sub-title {
     font-size: 1.25rem;
+  }
+  #skills .article-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
   }
   .logo {
     font-size: 1.5rem;
@@ -90,6 +99,10 @@
     width: auto;
     height: 46vw;
     justify-content: center;
+  }
+  .section__pic-container img {
+    max-width: 100%;
+    height: auto;
   }
   .section__text__p2 {
     font-size: 1.25rem;
