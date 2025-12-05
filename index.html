@@ -2,14 +2,49 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>My Portfolio</title>
+
+    <meta
+      name="description"
+      content="Portfolio of R Pradhyumna, fullstack developer experienced in React, Node.js, PostgreSQL, and modern web technologies."
+    />
+
     <link rel="stylesheet" href="style.css" />
+
     <link rel="stylesheet" href="mediaqueries.css" />
+
     <link rel="preload" href="./assets/Profile pic-2.png" as="image" />
+
     <link rel="preload" href="./assets/Profile pic.jpg" as="image" />
+
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./assets/favicon-16x16.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./assets/apple-touch-icon.png"
+    />
   </head>
+
   <body>
     <nav id="desktop-nav">
       <div class="logo">R Pradhyumna</div>
@@ -22,22 +57,32 @@
         </ul>
       </div>
     </nav>
+
+    <!-- Hamburger -->
     <nav id="hamburger-nav">
       <div class="logo">R Pradhyumna</div>
       <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
+        <div
+          class="hamburger-icon"
+          onclick="toggleMenu()"
+          aria-label="Toggle navigation menu"
+        >
           <span></span>
           <span></span>
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <ul>
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </ul>
         </div>
       </div>
     </nav>
+
+    <!-- Profile section -->
     <section id="profile">
       <div class="section__pic-container">
         <img
@@ -50,16 +95,20 @@
         <h1 class="title">R Pradhyumna</h1>
         <p class="section__text__p2">Fullstack Developer</p>
         <div class="btn-container">
-          <button
+          <a
             class="btn btn-color-2"
-            onclick="window.open('./assets/R-Pradhyumna_Resume.pdf')"
+            href="./assets/R-Pradhyumna_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             Download Resume
-          </button>
+          </a>
+
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
           </button>
         </div>
+
         <div id="socials-container">
           <img
             src="./assets/linkedin.png"
@@ -67,6 +116,7 @@
             class="icon"
             onclick="location.href='https://linkedin.com/in/pradhyumna-r'"
           />
+
           <img
             src="./assets/github.png"
             alt="My Github profile"
@@ -76,6 +126,8 @@
         </div>
       </div>
     </section>
+
+    <!-- About section -->
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
@@ -85,6 +137,7 @@
             src="./assets/Profile pic.jpg"
             alt="Profile picture"
             class="about-pic"
+            loading="lazy"
           />
         </div>
         <div class="about-details-container">
@@ -93,6 +146,7 @@
               <img
                 src="./assets/experience.png"
                 alt="skills icon"
+                loading="lazy"
                 class="icon"
               />
               <h3>Experience</h3>
@@ -102,6 +156,7 @@
               <img
                 src="./assets/education.png"
                 alt="Education icon"
+                loading="lazy"
                 class="icon"
               />
               <h3>Education</h3>
@@ -124,10 +179,13 @@
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
+        loading="lazy"
         class="icon arrow"
         onclick="location.href='./#skills'"
       />
     </section>
+
+    <!-- Skills section -->
     <section id="skills">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Skills</h1>
@@ -139,8 +197,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>HTML</h3>
@@ -149,8 +208,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>CSS</h3>
@@ -159,8 +219,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>JavaScript</h3>
@@ -169,8 +230,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>ReactJs</h3>
@@ -179,8 +241,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>React Query</h3>
@@ -189,8 +252,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Redux</h3>
@@ -199,21 +263,23 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
-                  <h3>NextJs</h3>
+                  <h3>Next.js</h3>
                 </div>
               </article>
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
-                  <h3>Tailwind</h3>
+                  <h3>Tailwind CSS</h3>
                 </div>
               </article>
             </div>
@@ -224,8 +290,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>PostgreSQL</h3>
@@ -234,8 +301,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Node JS</h3>
@@ -244,8 +312,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Express JS</h3>
@@ -254,8 +323,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>MySQL</h3>
@@ -264,8 +334,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>MongoDB</h3>
@@ -274,8 +345,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Supabase</h3>
@@ -289,8 +361,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Python</h3>
@@ -299,8 +372,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>C++</h3>
@@ -309,8 +383,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>C</h3>
@@ -319,8 +394,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Java</h3>
@@ -334,8 +410,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Github</h3>
@@ -344,8 +421,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>VS Code</h3>
@@ -354,8 +432,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Postman</h3>
@@ -364,8 +443,9 @@
               <article>
                 <img
                   src="./assets/checkmark.png"
-                  alt="skills icon"
+                  alt="Skill proficiency checkmark"
                   class="icon"
+                  loading="lazy"
                 />
                 <div>
                   <h3>Vite</h3>
@@ -382,61 +462,124 @@
         onclick="location.href='./#projects'"
       />
     </section>
+
+    <!-- Projects section -->
     <section id="projects">
       <p class="section__text__p1">Browse My Recent</p>
       <h1 class="title">Projects</h1>
+
       <div class="skills-details-container">
         <div class="about-containers">
+          <!-- ExamSuite -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/ExamSuite.png"
+                alt="ExamSuite project screenshot"
+                loading="lazy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">ExamSuite</h2>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/R-Pradhyumna/EMS-MITM`"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+
+          <!-- Innovata -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/Innovata.png"
-                alt="Project 1"
+                alt="Innovata project screenshot"
+                loading="lazy"
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Innovata | IS&E</h2>
+            <h2 class="skills-sub-title project-title">Innovata</h2>
             <div class="btn-container">
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://github.com/R-Pradhyumna/ise-prjct'"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Github
-              </button>
-              <button
+              </a>
+              <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://innovata-ise.netlify.app/'"
+                onclick="location.href='https://innovata-ise.netlify.app'"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live Demo
-              </button>
+              </a>
             </div>
           </div>
+
+          <!-- Infosphere -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Infosphere.png"
+                alt="Infosphere project screenshot"
+                loading="lazy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Infosphere</h2>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/R-Pradhyumna/infosphere-ise-1'"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://infosphere-ise.netlify.app/'"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Fast React Pizza -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
                 src="./assets/Fast-React-Pizza.png"
-                alt="Project 2"
+                alt="Fast React Pizza project screenshot"
+                loading="lazy"
                 class="project-img"
               />
             </div>
             <h2 class="skills-sub-title project-title">Fast React Pizza</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/jonasschmedtmann/ultimate-react-course/tree/main/16-fast-react-pizza/final-2-final'"
-              >
-                Github
-              </button>
-              <button
+              <a
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://quick-pizza.netlify.app/'"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 Live Demo
-              </button>
+              </a>
             </div>
           </div>
         </div>
       </div>
+
       <img
         src="./assets/arrow.png"
         alt="Arrow icon"
@@ -444,6 +587,8 @@
         onclick="location.href='./#contact'"
       />
     </section>
+
+    <!-- Contact section -->
     <section id="contact">
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
@@ -452,6 +597,7 @@
           <img
             src="./assets/email.png"
             alt="Email icon"
+            loading="lazy"
             class="icon contact-icon email-icon"
           />
           <p>
@@ -460,6 +606,8 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer section -->
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -473,6 +621,7 @@
       </nav>
       <p>Copyright &#169; 2025 R Pradhyumna. All Rights Reserved.</p>
     </footer>
+
     <script src="script.js" defer></script>
   </body>
 </html>

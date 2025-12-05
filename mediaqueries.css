@@ -50,7 +50,7 @@
 @media screen and (max-width: 600px) {
   #contact,
   footer {
-    height: 40vh;
+    height: fit-content;
   }
   #profile {
     height: 83vh;
@@ -64,7 +64,6 @@
     margin-bottom: 2rem;
   }
   .about-containers {
-    grid-template-columns: 1fr; /* Already single column */
     gap: 1rem;
   }
 
