@@ -379,6 +379,14 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.project-description {
+  margin: 0 1.5rem 1rem;
+  font-size: 0.95rem;
+  color: rgb(85, 85, 85);
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+
 /* CONTACT */
 
 #contact {

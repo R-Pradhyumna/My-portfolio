@@ -112,4 +112,12 @@
   .text-container {
     text-align: justify;
   }
+  .project-description {
+    text-align: left;
+    max-width: 32rem;
+    margin-inline: auto;
+  }
+  .text-container {
+    text-align: left;
+  }
 }

@@ -51,8 +51,8 @@
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
@@ -74,8 +74,8 @@
         <div class="menu-links">
           <ul>
             <li><a href="#about" onclick="toggleMenu()">About</a></li>
-            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
           </ul>
         </div>
@@ -184,6 +184,157 @@
         loading="lazy"
         class="icon arrow"
         onclick="location.href='./#skills'"
+      />
+    </section>
+
+    <!-- Projects section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+
+      <div class="skills-details-container">
+        <div class="about-containers">
+          <!-- ExamSuite -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Examsuite.png"
+                alt="ExamSuite project screenshot"
+                loading="lazy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">ExamSuite</h2>
+            <p class="project-description">
+              Designed and built an end-to-end exam management platform used by
+              250+ students and 4 admin roles at MIT Mysore. Implemented secure
+              role-based access control and automated exam workflows, then
+              documented the architecture in a published research paper.
+            </p>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href=`https://github.com/R-Pradhyumna/EMS-MITM`"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+
+          <!-- Innovata -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Innovata.png"
+                alt="Innovata project screenshot"
+                loading="lazy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Innovata</h2>
+            <p class="project-description">
+              Created a production ready project showcase platform for 100+
+              students and faculty to publish and explore academic work without
+              developer involvement. Connected Google Sheets and Drive as a
+              low-code CMS, turning manual updates into a simple, self-service
+              workflow.
+            </p>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/R-Pradhyumna/ise-prjct'"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://innovata-ise.netlify.app'"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Infosphere -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Infosphere.png"
+                alt="Infosphere project screenshot"
+                loading="lazy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Infosphere</h2>
+            <p class="project-description">
+              Architected a club management portal now used by the department of
+              IS&E to run Sports, Technical, and Cultural clubs from a single
+              interface. Combined React and a Google Sheets-backed CMS to give
+              faculty real-time control over content while keeping the system
+              fast and maintainable.
+            </p>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/R-Pradhyumna/infosphere-ise-1'"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Github
+              </a>
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://infosphere-ise.netlify.app/'"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+
+          <!-- Fast React Pizza -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Fast-React-Pizza.png"
+                alt="Fast React Pizza project screenshot"
+                loading="lazy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">Fast React Pizza</h2>
+            <p class="project-description">
+              Built a performant pizza ordering SPA to practice real-world React
+              patterns: global state management, derived UI, and async flows.
+              Focused on instant feedback with a smooth UX from customizing
+              orders to tracking them in a responsive, mobile-first layout.
+            </p>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://quick-pizza.netlify.app/'"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Live Demo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
       />
     </section>
 
@@ -462,131 +613,6 @@
         alt="Arrow icon"
         class="icon arrow"
         onclick="location.href='./#projects'"
-      />
-    </section>
-
-    <!-- Projects section -->
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-      <h1 class="title">Projects</h1>
-
-      <div class="skills-details-container">
-        <div class="about-containers">
-          <!-- ExamSuite -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Examsuite.png"
-                alt="ExamSuite project screenshot"
-                loading="lazy"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">ExamSuite</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href=`https://github.com/R-Pradhyumna/EMS-MITM`"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-            </div>
-          </div>
-
-          <!-- Innovata -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Innovata.png"
-                alt="Innovata project screenshot"
-                loading="lazy"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Innovata</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/R-Pradhyumna/ise-prjct'"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://innovata-ise.netlify.app'"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <!-- Infosphere -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Infosphere.png"
-                alt="Infosphere project screenshot"
-                loading="lazy"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Infosphere</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/R-Pradhyumna/infosphere-ise-1'"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://infosphere-ise.netlify.app/'"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <!-- Fast React Pizza -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Fast-React-Pizza.png"
-                alt="Fast React Pizza project screenshot"
-                loading="lazy"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Fast React Pizza</h2>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://quick-pizza.netlify.app/'"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
       />
     </section>
 
