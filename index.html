@@ -1,43 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>My Portfolio</title>
-
+    <title>R Pradhyumna | Software Engineer & Full Stack Developer</title>
     <meta
       name="description"
-      content="Portfolio of R Pradhyumna, fullstack developer experienced in React, Node.js, PostgreSQL, and modern web technologies."
+      content="Portfolio of R Pradhyumna, Software Engineer and Full Stack Developer specializing in reliable systems, backend engineering, and infrastructure automation."
+    />
+
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://r-pradhyumna.github.io/My-portfolio/"
+    />
+    <meta property="og:title" content="R Pradhyumna | Software Engineer" />
+    <meta
+      property="og:description"
+      content="Portfolio of R Pradhyumna, Software Engineer and Full Stack Developer specializing in reliable systems, backend engineering, and infrastructure automation."
+    />
+    <meta
+      property="og:image"
+      content="https://r-pradhyumna.github.io/My-portfolio/assets/profile-pic.png"
+    />
+
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta
+      property="twitter:url"
+      content="https://r-pradhyumna.github.io/My-portfolio/"
+    />
+    <meta property="twitter:title" content="R Pradhyumna | Software Engineer" />
+    <meta
+      property="twitter:description"
+      content="Portfolio of R Pradhyumna, Software Engineer and Full Stack Developer specializing in reliable systems, backend engineering, and infrastructure automation."
+    />
+    <meta
+      property="twitter:image"
+      content="https://r-pradhyumna.github.io/My-portfolio/assets/profile-pic.png"
     />
 
     <link rel="stylesheet" href="style.css" />
-
     <link rel="stylesheet" href="mediaqueries.css" />
 
-    <link rel="preload" href="./assets/Profile pic-2.png" as="image" />
-
-    <link rel="preload" href="./assets/Profile pic.jpg" as="image" />
+    <!-- Preload the main profile picture -->
+    <link rel="preload" href="./assets/profile-pic.png" as="image" />
 
     <link rel="icon" type="image/x-icon" href="./assets/favicon.ico" />
-
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
-
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="./assets/favicon-16x16.png"
     />
-
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -47,7 +69,7 @@
 
   <body>
     <nav id="desktop-nav">
-      <div class="logo">R Pradhyumna</div>
+      <div class="logo">Pradhyumna R</div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
@@ -60,7 +82,7 @@
 
     <!-- Hamburger -->
     <nav id="hamburger-nav">
-      <div class="logo">R Pradhyumna</div>
+      <div class="logo">Pradhyumna R</div>
       <div class="hamburger-menu">
         <div
           class="hamburger-icon"
@@ -86,43 +108,48 @@
     <section id="profile">
       <div class="section__pic-container">
         <img
-          src="./assets/Profile pic-2.png"
+          src="./assets/profile-pic.png"
           alt="R Pradhyumna profile picture"
         />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">R Pradhyumna</h1>
-        <p class="section__text__p2">Fullstack Developer</p>
+        <h1 class="title">Pradhyumna R</h1>
+        <p class="section__text__p2">
+          Software Engineer | Full Stack Developer
+        </p>
         <div class="btn-container">
-          <button
+          <a
             class="btn btn-color-2"
             href="./assets/R-Pradhyumna_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
+            download="Pradhyumna_Resume.pdf"
           >
-            Download Resume
-          </button>
+            Resume
+          </a>
 
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+          <a class="btn btn-color-1" href="#contact"> Contact Info </a>
         </div>
 
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/in/pradhyumna-r'"
-          />
+          <a
+            href="https://linkedin.com/in/pradhyumna-r"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my LinkedIn profile"
+          >
+            <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon" />
+          </a>
 
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/R-Pradhyumna'"
-          />
+          <a
+            href="https://github.com/R-Pradhyumna"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Visit my GitHub profile"
+          >
+            <img src="./assets/github.png" alt="GitHub icon" class="icon" />
+          </a>
         </div>
       </div>
     </section>
@@ -131,60 +158,50 @@
     <section id="about">
       <p class="section__text__p1">Get To Know More</p>
       <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/Profile pic.jpg"
-            alt="Profile picture"
-            class="about-pic"
-            loading="lazy"
-          />
+
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img
+              src="./assets/experience.png"
+              alt="Experience icon"
+              loading="lazy"
+              class="icon"
+            />
+            <h3>Experience</h3>
+            <p>Freelance DevOps Engineer<br />Sai Atharv Groups</p>
+          </div>
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              loading="lazy"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>B.E. Information Science & Engineering<br />GPA: 8.89</p>
+          </div>
         </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="skills icon"
-                loading="lazy"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>Enthusiastic fresher<br />looking for an internship</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                loading="lazy"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>
-                B.E. Bachelor of Engineering<br />Information Science &
-                Engineering
-              </p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              Full-stack Developer with hands-on experience building
-              production-grade web applications using React, Node.js, PostgreSQL
-              and MySQL. Experienced in developing role-based systems serving
-              250+ users with published research. Passionate about creating
-              scalable, user-friendly solutions and continuously improving
-              skills through real-world projects.
-            </p>
-          </div>
+
+        <div class="text-container">
+          <p>
+            Software engineer who enjoys building reliable systems that simplify
+            complex operational workflows through thoughtful system design,
+            backend engineering, and infrastructure automation, with a strong
+            interest in databases, optimization, and scalable software
+            architecture.
+          </p>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        loading="lazy"
-        class="icon arrow"
-        onclick="location.href='./#skills'"
-      />
+
+      <a href="#projects" aria-label="Scroll to Projects section">
+        <img
+          src="./assets/arrow.png"
+          alt="Down arrow icon"
+          loading="lazy"
+          class="icon arrow"
+        />
+      </a>
     </section>
 
     <!-- Projects section -->
@@ -206,122 +223,117 @@
             </div>
             <h2 class="skills-sub-title project-title">ExamSuite</h2>
             <p class="project-description">
-              Designed and built an end-to-end exam management platform used by
-              250+ students and 4 admin roles at MIT Mysore. Implemented secure
-              role-based access control and automated exam workflows, then
-              documented the architecture in a published research paper.
+              Streamlined question paper workflows for 250+ institutional users
+              by engineering a centralized examination platform featuring
+              advanced Row-Level Security (RLS) and role-based access control.
             </p>
             <div class="btn-container">
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href=`https://github.com/R-Pradhyumna/EMS-MITM`"
+                href="https://github.com/R-Pradhyumna/EMS-MITM"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="View ExamSuite source code on GitHub"
               >
                 Github
               </a>
             </div>
           </div>
 
-          <!-- Innovata -->
+          <!-- Timetable -->
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/Innovata.png"
-                alt="Innovata project screenshot"
+                src="./assets/Timetable.png"
+                alt="Timetable project screenshot"
                 loading="lazy"
                 class="project-img"
               />
             </div>
-            <h2 class="skills-sub-title project-title">Innovata</h2>
+            <h2 class="skills-sub-title project-title">Timetable Scheduler</h2>
             <p class="project-description">
-              Created a production ready project showcase platform for 100+
-              students and faculty to publish and explore academic work without
-              developer involvement. Connected Google Sheets and Drive as a
-              low-code CMS, turning manual updates into a simple, self-service
-              workflow.
+              Eliminated hours of manual timetable preparation by developing an
+              automated academic scheduling system using Google OR-Tools CP-SAT
+              and a custom C++ constraint solver.
             </p>
             <div class="btn-container">
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/R-Pradhyumna/ise-prjct'"
+                href="https://github.com/R-Pradhyumna/Timetable-generator"
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="View Timetable Scheduler source code on GitHub"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+
+          <!-- Work-Location -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Work_Location.png"
+                alt="Work-Location project screenshot"
+                loading="lazy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">
+              Work-Location Tracker
+            </h2>
+            <p class="project-description">
+              Resolved hybrid workplace communication bottlenecks by developing
+              an enterprise location management platform with a scalable
+              Express.js and PostgreSQL backend.
+            </p>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/R-Pradhyumna/work-location-tracker"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Work-Location Tracker source code on GitHub"
+              >
+                Github
+              </a>
+            </div>
+          </div>
+
+          <!-- Communication Visualizer -->
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Visualizer.png"
+                alt="Visualizer project screenshot"
+                loading="lazy"
+                class="project-img"
+              />
+            </div>
+            <h2 class="skills-sub-title project-title">
+              Communications Visualizer
+            </h2>
+            <p class="project-description">
+              Replaced static whiteboard waveform drawings with a browser-based
+              visualizer built using JavaScript and Plotly.js, enabling
+              real-time interactive demonstrations.
+            </p>
+            <div class="btn-container">
+              <a
+                class="btn btn-color-2 project-btn"
+                href="https://github.com/R-Pradhyumna/Visualizer"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="View Communications Visualizer source code on GitHub"
               >
                 Github
               </a>
               <a
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://innovata-ise.netlify.app'"
+                href="https://r-pradhyumna.github.io/Visualizer/"
                 target="_blank"
                 rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <!-- Infosphere -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Infosphere.png"
-                alt="Infosphere project screenshot"
-                loading="lazy"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Infosphere</h2>
-            <p class="project-description">
-              Architected a club management portal now used by the department of
-              IS&E to run Sports, Technical, and Cultural clubs from a single
-              interface. Combined React and a Google Sheets-backed CMS to give
-              faculty real-time control over content while keeping the system
-              fast and maintainable.
-            </p>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/R-Pradhyumna/infosphere-ise-1'"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Github
-              </a>
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://infosphere-ise.netlify.app/'"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Live Demo
-              </a>
-            </div>
-          </div>
-
-          <!-- Fast React Pizza -->
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/Fast-React-Pizza.png"
-                alt="Fast React Pizza project screenshot"
-                loading="lazy"
-                class="project-img"
-              />
-            </div>
-            <h2 class="skills-sub-title project-title">Fast React Pizza</h2>
-            <p class="project-description">
-              Built a performant pizza ordering SPA to practice real-world React
-              patterns: global state management, derived UI, and async flows.
-              Focused on instant feedback with a smooth UX from customizing
-              orders to tracking them in a responsive, mobile-first layout.
-            </p>
-            <div class="btn-container">
-              <a
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://quick-pizza.netlify.app/'"
-                target="_blank"
-                rel="noopener noreferrer"
+                aria-label="View Communications Visualizer live demo"
               >
                 Live Demo
               </a>
@@ -330,12 +342,14 @@
         </div>
       </div>
 
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
+      <a href="#skills" aria-label="Scroll to Contact section">
+        <img
+          src="./assets/arrow.png"
+          alt="Down arrow icon"
+          class="icon arrow"
+          loading="lazy"
+        />
+      </a>
     </section>
 
     <!-- Skills section -->
@@ -344,6 +358,7 @@
       <h1 class="title">Skills</h1>
       <div class="skills-details-container">
         <div class="about-containers">
+          <!-- Box 1: Frontend Development -->
           <div class="details-container">
             <h2 class="skills-sub-title">Frontend Development</h2>
             <div class="article-container">
@@ -354,9 +369,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>HTML</h3>
-                </div>
+                <div><h3>Next.js</h3></div>
               </article>
               <article>
                 <img
@@ -365,9 +378,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>CSS</h3>
-                </div>
+                <div><h3>React.js</h3></div>
               </article>
               <article>
                 <img
@@ -376,9 +387,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>JavaScript</h3>
-                </div>
+                <div><h3>JavaScript</h3></div>
               </article>
               <article>
                 <img
@@ -387,56 +396,12 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>ReactJs</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skill proficiency checkmark"
-                  class="icon"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>React Query</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skill proficiency checkmark"
-                  class="icon"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Redux</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skill proficiency checkmark"
-                  class="icon"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Next.js</h3>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Skill proficiency checkmark"
-                  class="icon"
-                  loading="lazy"
-                />
-                <div>
-                  <h3>Tailwind CSS</h3>
-                </div>
+                <div><h3>Tailwind CSS</h3></div>
               </article>
             </div>
           </div>
+
+          <!-- Box 2: Backend Development -->
           <div class="details-container">
             <h2 class="skills-sub-title">Backend Development</h2>
             <div class="article-container">
@@ -447,9 +412,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>PostgreSQL</h3>
-                </div>
+                <div><h3>Node.js</h3></div>
               </article>
               <article>
                 <img
@@ -458,9 +421,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>Node JS</h3>
-                </div>
+                <div><h3>Express.js</h3></div>
               </article>
               <article>
                 <img
@@ -469,9 +430,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>Express JS</h3>
-                </div>
+                <div><h3>Nest.js</h3></div>
               </article>
               <article>
                 <img
@@ -480,9 +439,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>MySQL</h3>
-                </div>
+                <div><h3>PostgreSQL</h3></div>
               </article>
               <article>
                 <img
@@ -491,9 +448,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>MongoDB</h3>
-                </div>
+                <div><h3>MongoDB</h3></div>
               </article>
               <article>
                 <img
@@ -502,14 +457,14 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>Supabase</h3>
-                </div>
+                <div><h3>REST APIs</h3></div>
               </article>
             </div>
           </div>
+
+          <!-- Box 3: DevOps & Infrastructure -->
           <div class="details-container">
-            <h2 class="skills-sub-title">Programming Languages</h2>
+            <h2 class="skills-sub-title">DevOps & Infrastructure</h2>
             <div class="article-container">
               <article>
                 <img
@@ -518,9 +473,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>Python</h3>
-                </div>
+                <div><h3>Docker</h3></div>
               </article>
               <article>
                 <img
@@ -529,9 +482,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>C++</h3>
-                </div>
+                <div><h3>Ansible</h3></div>
               </article>
               <article>
                 <img
@@ -540,9 +491,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>C</h3>
-                </div>
+                <div><h3>Linux & Bash</h3></div>
               </article>
               <article>
                 <img
@@ -551,14 +500,14 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>Java</h3>
-                </div>
+                <div><h3>Git & GitHub</h3></div>
               </article>
             </div>
           </div>
+
+          <!-- Box 4: Core CS & AI Workflows -->
           <div class="details-container">
-            <h2 class="skills-sub-title">Developer Tools</h2>
+            <h2 class="skills-sub-title">Core CS & AI Workflows</h2>
             <div class="article-container">
               <article>
                 <img
@@ -567,9 +516,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>Github</h3>
-                </div>
+                <div><h3>Data Structures & Algorithms</h3></div>
               </article>
               <article>
                 <img
@@ -578,9 +525,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>VS Code</h3>
-                </div>
+                <div><h3>OS & DBMS</h3></div>
               </article>
               <article>
                 <img
@@ -589,9 +534,7 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>Postman</h3>
-                </div>
+                <div><h3>Python</h3></div>
               </article>
               <article>
                 <img
@@ -600,20 +543,21 @@
                   class="icon"
                   loading="lazy"
                 />
-                <div>
-                  <h3>Vite</h3>
-                </div>
+                <div><h3>Gen AI Workflows</h3></div>
               </article>
             </div>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
+
+      <a href="#contact" aria-label="Scroll to Projects section">
+        <img
+          src="./assets/arrow.png"
+          alt="Down arrow icon"
+          class="icon arrow"
+          loading="lazy"
+        />
+      </a>
     </section>
 
     <!-- Contact section -->
@@ -621,6 +565,7 @@
       <p class="section__text__p1">Get in Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
+        <!-- Email -->
         <div class="contact-info-container">
           <img
             src="./assets/email.png"
@@ -629,7 +574,32 @@
             class="icon contact-icon email-icon"
           />
           <p>
-            <a href="mailto:pradhyumnar26@gmail.com">pradhyumnar26@gmail.com</a>
+            <a
+              href="mailto:pradhyumnar26@gmail.com"
+              aria-label="Send an email to pradhyumnar26@gmail.com"
+            >
+              pradhyumnar26@gmail.com
+            </a>
+          </p>
+        </div>
+
+        <!-- LinkedIn -->
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            loading="lazy"
+            class="icon contact-icon"
+          />
+          <p>
+            <a
+              href="https://linkedin.com/in/pradhyumna-r"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Visit my LinkedIn profile"
+            >
+              LinkedIn
+            </a>
           </p>
         </div>
       </div>
@@ -637,19 +607,24 @@
 
     <!-- Footer section -->
     <footer>
-      <nav>
+      <nav aria-label="Footer navigation">
         <div class="nav-links-container">
           <ul class="nav-links">
             <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
-      <p>Copyright &#169; 2025 R Pradhyumna. All Rights Reserved.</p>
+      <p>Copyright &#169; 2026 R Pradhyumna. All Rights Reserved.</p>
     </footer>
 
-    <script src="script.js" defer></script>
+    <!-- Back to Top Button -->
+    <a href="#profile" id="back-to-top" aria-label="Scroll back to top">
+      <img src="./assets/arrow.png" alt="Up arrow icon" class="icon" />
+    </a>
+
+    <script src="script.js"></script>
   </body>
 </html>

@@ -11,10 +11,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 p {
   color: rgb(85, 85, 85);
 }
@@ -24,6 +20,22 @@ p {
 a,
 .btn {
   transition: all 300ms ease;
+}
+
+/* KEYBOARD NAVIGATION (A11y) */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid rgb(53, 53, 53);
+  outline-offset: 4px;
+  border-radius: 4px;
+  transition: outline-offset 0.2s ease;
+}
+
+/* Ensure images inside focused links don't get a double outline */
+a:focus-visible img {
+  outline: none;
 }
 
 /* DESKTOP NAV */
@@ -258,6 +270,16 @@ section {
 
 #about {
   position: relative;
+  height: fit-content;
+  padding-bottom: 5rem;
+}
+
+.about-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .about-containers {
@@ -268,20 +290,11 @@ section {
   margin-top: 2rem;
 }
 
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
+#about .about-containers {
   display: flex;
-}
-
-.about-pic {
-  border-radius: 2rem;
-}
-
-.arrow {
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
 .details-container {
@@ -294,15 +307,21 @@ section {
   text-align: center;
 }
 
-.section-container {
-  gap: 4rem;
-  height: 80%;
+#about .details-container {
+  min-width: 250px;
+  max-width: 400px;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
+.text-container {
+  max-width: 800px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.arrow {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
 }
 
 /* skills SECTION */
@@ -436,4 +455,32 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* BACK TO TOP BUTTON */
+
+#back-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  display: none; /* Hidden by default */
+  background: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 300ms ease;
+}
+
+#back-to-top:hover {
+  background: rgb(230, 230, 230);
+  cursor: pointer;
+}
+
+#back-to-top img {
+  transform: rotate(
+    180deg
+  ); /* Flips your existing downward arrow pointing up */
+  display: block;
 }
